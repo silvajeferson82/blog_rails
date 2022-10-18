@@ -11,6 +11,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="bg-primary text-white mb-4 p-4 text-center">
+      <%= link_to root_path, class: 'text-white text-decoration-none' do %> 
+      <h1 class="display-4">Blog do Dev Rails Junior</h1>
+      <% end %>
+
+      <p class="lead">Olá, aqui você encontrará artigos sobre Ruby e Ruby on Rails, tecnologia e carreira.</p>
+      
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <footer class="bg-primary text-white text-center mt-5 p-4">
+      Copyright &copy; Jeferson SIlva <%= Date.current.year %>
+    </footer>
   </body>
 </html>
